@@ -112,29 +112,6 @@ jobs:
     with:
       commit_sha: ${{ github.sha }}
 
-  publish-demo-site-with-storybooks:
-    if: |
-      github.event_name == 'workflow_dispatch' ||
-      (github.event_name == 'push' && (github.ref == 'refs/heads/development' || startsWith(github.ref, 'refs/heads/release-'))) ||
-      (github.event_name == 'pull_request' && (github.base_ref == 'development' || github.base_ref == 'master'))
-    needs: [build, run-loki-tests, run-e2e-tests]
-    uses: ./.github/workflows/publish-demo-site-with-storybooks.yml
-    with:
-      commit_sha: ${{ github.sha }}
-      build_single_version: ${{ github.event_name == 'workflow_dispatch' || (github.event_name == 'pull_request' && github.base_ref == 'development') }}
-
-    secrets:
-      HDSDEMO_SSH_DEPLOY_KEY: ${{ secrets.HDSDEMO_SSH_DEPLOY_KEY }}
-
-  publish-site-with-storybooks:
-    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
-    needs: [build, run-loki-tests, run-e2e-tests]
-    uses: ./.github/workflows/publish-site-with-storybooks.yml
-    with:
-      commit_sha: ${{ github.sha }}
-    secrets:
-      ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-  
   publish-npm-packages:
     if: github.event_name == 'push' && github.ref == 'refs/heads/master'
     needs: [build, run-loki-tests, run-e2e-tests]
@@ -145,14 +122,12 @@ jobs:
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   delete-artifacts-after-success:
-    needs: [build, run-loki-tests, run-e2e-tests, publish-demo-site-with-storybooks, publish-site-with-storybooks, publish-npm-packages]
+    needs: [build, run-loki-tests, run-e2e-tests, publish-npm-packages]
     if: |
       always() && 
       (needs.build.result == 'success') && 
       (needs.run-loki-tests.result == 'success') && 
       (needs.run-e2e-tests.result == 'success') && 
-      (needs.publish-demo-site-with-storybooks.result == 'success' || needs.publish-demo-site-with-storybooks.result == 'skipped') && 
-      (needs.publish-site-with-storybooks.result == 'success' || needs.publish-site-with-storybooks.result == 'skipped') &&
       (needs.publish-npm-packages.result == 'success' || needs.publish-npm-packages.result == 'skipped')
     runs-on: ubuntu-latest
     steps:
