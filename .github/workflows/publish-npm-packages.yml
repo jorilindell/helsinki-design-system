@@ -10,6 +10,9 @@ on:
         required: false
         type: string
         default: "yarn release"
+    secrets:
+      NPM_TOKEN:
+        required: true
 
 jobs:
   publish-npm-packages:
@@ -62,3 +65,5 @@ jobs:
 
       - name: release npm packages
         run: ${{ inputs.release_command }}
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
