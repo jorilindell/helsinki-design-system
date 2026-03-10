@@ -6,6 +6,10 @@ on:
       commit_sha:
         required: true
         type: string
+      release_command:
+        required: false
+        type: string
+        default: "yarn release"
     secrets:
       NPM_TOKEN:
         required: true
@@ -57,6 +61,6 @@ jobs:
         run: yarn --frozen-lockfile --ignore-scripts
 
       - name: release npm packages
-        run: yarn release
+        run: ${{ inputs.release_command }}
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
