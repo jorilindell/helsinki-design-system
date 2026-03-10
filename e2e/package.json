@@ -2,7 +2,7 @@
   "name": "e2e",
   "private": true,
   "description": "e2e tests using Playwright",
-  "version": "4.10.3",
+  "version": "4.10.4",
   "engines": {
     "node": "^22.13.1"
   },
