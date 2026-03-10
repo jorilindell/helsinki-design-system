@@ -30,7 +30,7 @@
 
 .card {
   background: white;
-  composes: text-body from 'hds-core/lib/utils/helpers.css';
+  composes: text-body from '@jorilindell/hds-core/lib/utils/helpers.css';
   min-height: 100%;
   padding: 1em 3em;
   width: 45%;

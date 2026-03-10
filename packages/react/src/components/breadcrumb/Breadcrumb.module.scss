@@ -1,39 +1,39 @@
-@use 'hds-core/lib/components/breadcrumb/_breadcrumb-mixin' as CoreSass;
+@use '@jorilindell/hds-core/lib/components/breadcrumb/_breadcrumb-mixin' as CoreSass;
 
 .breadcrumb {
   @include CoreSass.breadcrumb($all: false, $base: true, $react: true);
 }
 
 .list {
-  composes: hds-breadcrumb__list from 'hds-core/lib/components/breadcrumb/breadcrumb.css';
+  composes: hds-breadcrumb__list from '@jorilindell/hds-core/lib/components/breadcrumb/breadcrumb.css';
 }
 
 .mobileList {
-  composes: hds-breadcrumb__list--mobile from 'hds-core/lib/components/breadcrumb/breadcrumb.css';
+  composes: hds-breadcrumb__list--mobile from '@jorilindell/hds-core/lib/components/breadcrumb/breadcrumb.css';
 }
 
 .desktopList {
-  composes: hds-breadcrumb__list--desktop from 'hds-core/lib/components/breadcrumb/breadcrumb.css';
+  composes: hds-breadcrumb__list--desktop from '@jorilindell/hds-core/lib/components/breadcrumb/breadcrumb.css';
 }
 
 .listItem {
-  composes: hds-breadcrumb__list-item from 'hds-core/lib/components/breadcrumb/breadcrumb.css';
+  composes: hds-breadcrumb__list-item from '@jorilindell/hds-core/lib/components/breadcrumb/breadcrumb.css';
 }
 
 .activeListItem {
-  composes: hds-breadcrumb__list-item--active from 'hds-core/lib/components/breadcrumb/breadcrumb.css';
+  composes: hds-breadcrumb__list-item--active from '@jorilindell/hds-core/lib/components/breadcrumb/breadcrumb.css';
 }
 
 .link {
-  composes: hds-breadcrumb__link from 'hds-core/lib/components/breadcrumb/breadcrumb.css';
+  composes: hds-breadcrumb__link from '@jorilindell/hds-core/lib/components/breadcrumb/breadcrumb.css';
 }
 
 .backArrow {
-  composes: hds-breadcrumb__back-arrow from 'hds-core/lib/components/breadcrumb/breadcrumb.css';
+  composes: hds-breadcrumb__back-arrow from '@jorilindell/hds-core/lib/components/breadcrumb/breadcrumb.css';
 }
 
 .separator {
-  composes: hds-breadcrumb__separator from 'hds-core/lib/components/breadcrumb/breadcrumb.css';
+  composes: hds-breadcrumb__separator from '@jorilindell/hds-core/lib/components/breadcrumb/breadcrumb.css';
 }
 
 /* icon is aligned differently in the svg itself */

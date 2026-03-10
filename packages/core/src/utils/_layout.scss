@@ -1,7 +1,7 @@
-// @import url('hds-design-tokens/lib/breakpoint/breakpoint.scss');
+// @import url('jorilindell/hds-design-tokens/lib/breakpoint/breakpoint.scss');
 // toimii use '../../node_modules/hds-design-tokens/lib/breakpoint/breakpoint.scss' as *;
 @use 'sass:list';
-@use 'hds-design-tokens/lib/breakpoint/breakpoint.scss' as *;
+@use '@jorilindell/hds-design-tokens/lib/breakpoint/breakpoint.scss' as *;
 
 //  MEDIA QUERIES
 

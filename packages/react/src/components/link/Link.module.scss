@@ -1,48 +1,48 @@
 .link {
-  composes: hds-link from 'hds-core/lib/components/link/link.css';
+  composes: hds-link from '@jorilindell/hds-core/lib/components/link/link.css';
 }
 
 .icon {
-  composes: icon from 'hds-core/lib/components/link/link.css';
+  composes: icon from '@jorilindell/hds-core/lib/components/link/link.css';
 }
 
 .iconStart {
-  composes: hds-icon-start from 'hds-core/lib/components/link/link.css';
+  composes: hds-icon-start from '@jorilindell/hds-core/lib/components/link/link.css';
 }
 
 .verticalAlignMediumIcon {
-  composes: vertical-align-medium-icon from 'hds-core/lib/components/link/link.css';
+  composes: vertical-align-medium-icon from '@jorilindell/hds-core/lib/components/link/link.css';
 }
 
 .verticalAlignBigIcon {
-  composes: vertical-align-big-icon from 'hds-core/lib/components/link/link.css';
+  composes: vertical-align-big-icon from '@jorilindell/hds-core/lib/components/link/link.css';
 }
 
 .verticalAlignSmallIcon {
-  composes: vertical-align-small-icon from 'hds-core/lib/components/link/link.css';
+  composes: vertical-align-small-icon from '@jorilindell/hds-core/lib/components/link/link.css';
 }
 
 .disableVisitedStyles {
-  composes: hds-link--disable-visited-styles from 'hds-core/lib/components/link/link.css';
+  composes: hds-link--disable-visited-styles from '@jorilindell/hds-core/lib/components/link/link.css';
 }
 
 .link-small {
-  composes: hds-link--small from 'hds-core/lib/components/link/link.css';
+  composes: hds-link--small from '@jorilindell/hds-core/lib/components/link/link.css';
 }
 
 .link-medium {
-  composes: hds-link--medium from 'hds-core/lib/components/link/link.css';
+  composes: hds-link--medium from '@jorilindell/hds-core/lib/components/link/link.css';
 }
 
 .link-large {
-  composes: hds-link--large from 'hds-core/lib/components/link/link.css';
+  composes: hds-link--large from '@jorilindell/hds-core/lib/components/link/link.css';
 }
 
 .button {
-  composes: hds-button from 'hds-core/lib/components/button/button.css';
-  composes: hds-button--primary from 'hds-core/lib/components/button/button.css';
+  composes: hds-button from '@jorilindell/hds-core/lib/components/button/button.css';
+  composes: hds-button--primary from '@jorilindell/hds-core/lib/components/button/button.css';
 }
 
 .buttonLabel {
-  composes: hds-button__label from 'hds-core/lib/components/button/button.css';
+  composes: hds-button__label from '@jorilindell/hds-core/lib/components/button/button.css';
 }

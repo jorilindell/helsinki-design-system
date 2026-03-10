@@ -1,19 +1,19 @@
 .card {
-  composes: hds-card from 'hds-core/lib/components/card/card.css';
+  composes: hds-card from '@jorilindell/hds-core/lib/components/card/card.css';
 }
 
 .boxShadow {
-  composes: hds-card--box-shadow from 'hds-core/lib/components/card/card.css';
+  composes: hds-card--box-shadow from '@jorilindell/hds-core/lib/components/card/card.css';
 }
 
 .border {
-  composes: hds-card--border from 'hds-core/lib/components/card/card.css';
+  composes: hds-card--border from '@jorilindell/hds-core/lib/components/card/card.css';
 }
 
 .body {
-  composes: hds-card__body from 'hds-core/lib/components/card/card.css';
+  composes: hds-card__body from '@jorilindell/hds-core/lib/components/card/card.css';
 }
 
 .text {
-  composes: hds-card__text from 'hds-core/lib/components/card/card.css';
+  composes: hds-card__text from '@jorilindell/hds-core/lib/components/card/card.css';
 }

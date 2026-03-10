@@ -1,22 +1,22 @@
 .fieldset {
-  composes: hds-fieldset from 'hds-core/lib/components/fieldset/fieldset.css';
+  composes: hds-fieldset from '@jorilindell/hds-core/lib/components/fieldset/fieldset.css';
 }
 
 .border {
-  composes: hds-fieldset--border from 'hds-core/lib/components/fieldset/fieldset.css';
+  composes: hds-fieldset--border from '@jorilindell/hds-core/lib/components/fieldset/fieldset.css';
 }
 
 .legend {
-  composes: hds-fieldset-legend from 'hds-core/lib/components/fieldset/fieldset.css';
+  composes: hds-fieldset-legend from '@jorilindell/hds-core/lib/components/fieldset/fieldset.css';
 }
 
 .helperText {
-  composes: helper-text from 'hds-core/lib/utils/helpers.css';
+  composes: helper-text from '@jorilindell/hds-core/lib/utils/helpers.css';
 }
 
 .legendWithTooltip {
   align-items: center;
-  composes: hds-fieldset-legend from 'hds-core/lib/components/fieldset/fieldset.css';
+  composes: hds-fieldset-legend from '@jorilindell/hds-core/lib/components/fieldset/fieldset.css';
   display: flex;
   grid-column-gap: var(--spacing-2-xs);
   justify-content: flex-start;

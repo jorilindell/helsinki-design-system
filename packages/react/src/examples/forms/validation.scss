@@ -3,7 +3,7 @@
   max-width: 792px;
 
   &__main-title {
-    composes: heading-xl from 'hds-core/lib/utils/helpers.css';
+    composes: heading-xl from '@jorilindell/hds-core/lib/utils/helpers.css';
     margin: 0 0 var(--spacing-m) 0;
   }
 
@@ -29,7 +29,7 @@
     margin-bottom: var(--spacing-xl);
 
     &-title {
-      composes: heading-s from 'hds-core/lib/utils/helpers.css';
+      composes: heading-s from '@jorilindell/hds-core/lib/utils/helpers.css';
       margin: 0 0 var(--spacing-m);
     }
   }

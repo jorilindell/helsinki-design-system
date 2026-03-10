@@ -1,25 +1,25 @@
 @import "../../styles/common.scss";
 
 .tag {
-  composes: hds-tag from 'hds-core/lib/components/tag/tag.css';
+  composes: hds-tag from '@jorilindell/hds-core/lib/components/tag/tag.css';
 }
 
 .large {
-  composes: hds-tag--large from 'hds-core/lib/components/tag/tag.css';
+  composes: hds-tag--large from '@jorilindell/hds-core/lib/components/tag/tag.css';
 }
 
 .action {
-  composes: hds-tag--action from 'hds-core/lib/components/tag/tag.css';
+  composes: hds-tag--action from '@jorilindell/hds-core/lib/components/tag/tag.css';
 }
 
 .link {
-  composes: hds-tag--link from 'hds-core/lib/components/tag/tag.css';
+  composes: hds-tag--link from '@jorilindell/hds-core/lib/components/tag/tag.css';
 }
 
 .icon {
-  composes: hds-tag__icon from 'hds-core/lib/components/tag/tag.css';
+  composes: hds-tag__icon from '@jorilindell/hds-core/lib/components/tag/tag.css';
 }
 
 .multiline {
-  composes: hds-tag--multiline from 'hds-core/lib/components/tag/tag.css';
+  composes: hds-tag--multiline from '@jorilindell/hds-core/lib/components/tag/tag.css';
 }

@@ -1,15 +1,15 @@
 .radioButton {
-  composes: hds-radio-button from 'hds-core/lib/components/radio-button/radio-button.css';
+  composes: hds-radio-button from '@jorilindell/hds-core/lib/components/radio-button/radio-button.css';
 }
 
 .input {
-  composes: hds-radio-button__input from 'hds-core/lib/components/radio-button/radio-button.css';
+  composes: hds-radio-button__input from '@jorilindell/hds-core/lib/components/radio-button/radio-button.css';
 }
 
 .label {
-  composes: hds-radio-button__label from 'hds-core/lib/components/radio-button/radio-button.css';
+  composes: hds-radio-button__label from '@jorilindell/hds-core/lib/components/radio-button/radio-button.css';
 }
 
 .helperText {
-  composes: helper-text from 'hds-core/lib/utils/helpers.css';
+  composes: helper-text from '@jorilindell/hds-core/lib/utils/helpers.css';
 }

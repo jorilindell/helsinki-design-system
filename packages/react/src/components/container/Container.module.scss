@@ -1,7 +1,7 @@
 @use "../../styles/layout.scss";
 
 .container {
-  composes: hds-container from 'hds-core/lib/components/container/container.css';
+  composes: hds-container from '@jorilindell/hds-core/lib/components/container/container.css';
 }
 
 .alignWithHeader {

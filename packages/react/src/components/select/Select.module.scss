@@ -474,7 +474,7 @@
 }
 
 .errorText {
-  composes: hds-text-input__error-text from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input__error-text from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
   margin-bottom: var(--spacing-2-xs);
 
   --icon-size: var(--computed-icon-size);

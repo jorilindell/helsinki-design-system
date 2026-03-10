@@ -91,6 +91,7 @@ const checkModule = (forHdsJs) => {
   allowedExternals.push('optimism');
   allowedExternals.push('ts-invariant');
   allowedExternals.push('@wry');
+  allowedExternals.push('@jorilindell');
   if (!forHdsJs) {
     // https://github.com/Hacker0x01/react-datepicker/issues/1606
     allowedExternals.push('date-fns');

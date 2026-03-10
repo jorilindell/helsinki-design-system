@@ -4,7 +4,7 @@
 .table {
   --content-background-color: var(--color-white);
 
-  composes: hds-table from 'hds-core/lib/components/table/table.css';
+  composes: hds-table from '@jorilindell/hds-core/lib/components/table/table.css';
 
   &.dark th {
     color: var(--color-white);
@@ -22,20 +22,20 @@
 }
 
 .caption {
-  composes: hds-table__caption from 'hds-core/lib/components/table/table.css';
+  composes: hds-table__caption from '@jorilindell/hds-core/lib/components/table/table.css';
 }
 
 .container {
-  composes: hds-table-container from 'hds-core/lib/components/table/table.css';
+  composes: hds-table-container from '@jorilindell/hds-core/lib/components/table/table.css';
   height: inherit;
 }
 
 .headerRow {
-  composes: hds-table__header-row from 'hds-core/lib/components/table/table.css';
+  composes: hds-table__header-row from '@jorilindell/hds-core/lib/components/table/table.css';
 }
 
 .content {
-  composes: hds-table__content from 'hds-core/lib/components/table/table.css';
+  composes: hds-table__content from '@jorilindell/hds-core/lib/components/table/table.css';
 }
 
 .sortButton {
@@ -92,7 +92,7 @@
 }
 
 .dense {
-  composes: hds-table--dense from 'hds-core/lib/components/table/table.css';
+  composes: hds-table--dense from '@jorilindell/hds-core/lib/components/table/table.css';
 
   .headerRow {
     .sortingHeader {
@@ -103,23 +103,23 @@
 }
 
 .zebra {
-  composes: hds-table--zebra from 'hds-core/lib/components/table/table.css';
+  composes: hds-table--zebra from '@jorilindell/hds-core/lib/components/table/table.css';
 }
 
 .verticalLines {
-  composes: hds-table--with-vertical-lines from 'hds-core/lib/components/table/table.css';
+  composes: hds-table--with-vertical-lines from '@jorilindell/hds-core/lib/components/table/table.css';
 }
 
 .verticalHeaderColumn {
-  composes: hds-table__vertical-header-column from 'hds-core/lib/components/table/table.css';
+  composes: hds-table__vertical-header-column from '@jorilindell/hds-core/lib/components/table/table.css';
 }
 
 .textAlignRight {
-  composes: hds-table--text-align-right from 'hds-core/lib/components/table/table.css';
+  composes: hds-table--text-align-right from '@jorilindell/hds-core/lib/components/table/table.css';
 }
 
 .textAlignContentRight {
-  composes: hds-table__content--text-align-td-right from 'hds-core/lib/components/table/table.css';
+  composes: hds-table__content--text-align-td-right from '@jorilindell/hds-core/lib/components/table/table.css';
 }
 
 /* MOBILE STYLES */
