@@ -1,6 +1,6 @@
 {
   "name": "@jorilindell/hds-react",
-  "version": "4.10.4",
+  "version": "4.11.0",
   "description": "React components for the Helsinki Design System",
   "homepage": "https://github.com/jorilindell/helsinki-design-system#readme",
   "repository": {
@@ -140,7 +140,7 @@
     "@babel/runtime": "^7.26.10",
     "@emotion/styled-base": "^11.0.0",
     "@hookform/resolvers": "^2.9.11",
-    "@jorilindell/hds-core": "4.10.4",
+    "@jorilindell/hds-core": "4.11.0",
     "@juggle/resize-observer": "3.2.0",
     "@popperjs/core": "2.11.5",
     "@react-aria/visually-hidden": "3.8.16",

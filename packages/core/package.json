@@ -1,6 +1,6 @@
 {
   "name": "@jorilindell/hds-core",
-  "version": "4.10.4",
+  "version": "4.11.0",
   "description": "Core styles for the Helsinki Design System",
   "homepage": "https://github.com/jorilindell/helsinki-design-system#readme",
   "repository": {
@@ -35,7 +35,7 @@
     "@babel/core": "^7.25.2",
     "@babel/preset-env": "^7.25.4",
     "@csstools/postcss-sass": "^5.1.1",
-    "@jorilindell/hds-design-tokens": "4.10.4",
+    "@jorilindell/hds-design-tokens": "4.11.0",
     "@storybook/addon-a11y": "6.4.18",
     "@storybook/addon-backgrounds": "6.4.18",
     "@storybook/addon-docs": "6.4.18",
