@@ -202,7 +202,7 @@
 }
 
 .heading {
-  composes: heading-l from 'hds-core/lib/utils/helpers.css';
+  composes: heading-l from '@jorilindell/hds-core/lib/utils/helpers.css';
   margin-top: 26px;
   width: fit-content;
 

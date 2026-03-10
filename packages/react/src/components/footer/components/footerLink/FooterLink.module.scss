@@ -22,7 +22,7 @@
 }
 
 .icon {
-  composes: icon from 'hds-core/lib/components/link/link.css';
+  composes: icon from '@jorilindell/hds-core/lib/components/link/link.css';
   margin-left: var(--spacing-3-xs);
 }
 

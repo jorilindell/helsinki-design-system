@@ -1,4 +1,4 @@
-@import url("hds-design-tokens");
+@import url("@jorilindell/hds-design-tokens");
 @import url("utils/animations.css");
 @import url("utils/helpers.css");
 

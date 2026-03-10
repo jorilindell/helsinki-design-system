@@ -1,4 +1,4 @@
-@use 'hds-core/lib/components/checkbox/_checkbox-mixin' as CoreSass;
+@use '@jorilindell/hds-core/lib/components/checkbox/_checkbox-mixin' as CoreSass;
 
 .checkbox {
   @include CoreSass.checkbox($all: false, $base: true, $react: true);
@@ -21,7 +21,7 @@
 }
 
 .helperText {
-  composes: helper-text from 'hds-core/lib/utils/helpers.css';
+  composes: helper-text from '@jorilindell/hds-core/lib/utils/helpers.css';
 }
 
 .tooltipButton {

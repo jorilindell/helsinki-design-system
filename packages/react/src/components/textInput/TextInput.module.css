@@ -1,5 +1,5 @@
 .root {
-  composes: hds-text-input from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
   position: relative;
 
   &.invalid {
@@ -10,11 +10,11 @@
 }
 
 .inputWrapper {
-  composes: hds-text-input__input-wrapper from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input__input-wrapper from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .input {
-  composes: hds-text-input__input from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input__input from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .input.hasButton {
@@ -30,51 +30,51 @@
 }
 
 .clearButton {
-  composes: hds-text-input__button-clear from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input__button-clear from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .hasClearButton {
-  composes: hds-text-input__input-clear from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input__input-clear from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .errorText {
-  composes: hds-text-input__error-text from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input__error-text from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .helperText {
-  composes: hds-text-input__helper-text from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input__helper-text from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .invalidText {
-  composes: hds-text-input__helper-text from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input__helper-text from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .successText {
-  composes: hds-text-input__success-text from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input__success-text from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .infoText {
-  composes: hds-text-input__info-text from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input__info-text from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .invalid {
-  composes: hds-text-input--invalid from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input--invalid from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .success {
-  composes: hds-text-input--success from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input--success from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .readOnly {
-  composes: hds-text-input--read-only from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input--read-only from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .buttonWrapper {
-  composes: hds-text-input__buttons from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input__buttons from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .button {
-  composes: hds-text-input__button from 'hds-core/lib/components/text-input/text-input.css';
+  composes: hds-text-input__button from '@jorilindell/hds-core/lib/components/text-input/text-input.css';
 }
 
 .button:disabled {

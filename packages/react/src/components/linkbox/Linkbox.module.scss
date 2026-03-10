@@ -113,16 +113,16 @@
 }
 
 .headingSmall {
-  composes: heading-s from 'hds-core/lib/utils/helpers.css';
+  composes: heading-s from '@jorilindell/hds-core/lib/utils/helpers.css';
   padding-bottom: 0;
 }
 
 .headingMedium {
-  composes: heading-m from 'hds-core/lib/utils/helpers.css';
+  composes: heading-m from '@jorilindell/hds-core/lib/utils/helpers.css';
 }
 
 .headingLarge {
-  composes: heading-l from 'hds-core/lib/utils/helpers.css';
+  composes: heading-l from '@jorilindell/hds-core/lib/utils/helpers.css';
   padding-bottom: var(--spacing-2-xs);
 }
 

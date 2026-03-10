@@ -1,7 +1,7 @@
-@use 'hds-core/lib/components/notification/_notification-mixin' as CoreSass;
+@use '@jorilindell/hds-core/lib/components/notification/_notification-mixin' as CoreSass;
 
 .notification {
-  composes: hds-notification from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification from '@jorilindell/hds-core/lib/components/notification/notification.css';
   overflow: hidden;
 }
 
@@ -11,7 +11,7 @@
 }
 
 .close {
-  composes: hds-notification__close-button from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification__close-button from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .notification.noBorder .close {
@@ -28,66 +28,66 @@
 }
 
 .content {
-  composes: hds-notification__content from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification__content from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .icon {
   background-color: transparent;
-  composes: hds-icon from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-icon from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .label {
-  composes: hds-notification__label from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification__label from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .body {
-  composes: hds-notification__body from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification__body from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .small {
-  composes: hds-notification--small from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification--small from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .large {
-  composes: hds-notification--large from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification--large from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .top-left {
-  composes: hds-notification--top-left from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification--top-left from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .top-center {
-  composes: hds-notification--top-center from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification--top-center from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .top-right {
-  composes: hds-notification--top-right from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification--top-right from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .bottom-left {
-  composes: hds-notification--bottom-left from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification--bottom-left from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .bottom-center {
-  composes: hds-notification--bottom-center from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification--bottom-center from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .bottom-right {
-  composes: hds-notification--bottom-right from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification--bottom-right from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .success {
-  composes: hds-notification--success from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification--success from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .alert {
-  composes: hds-notification--alert from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification--alert from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .error {
-  composes: hds-notification--error from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification--error from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }
 
 .boxShadow {
-  composes: hds-notification--box-shadow from 'hds-core/lib/components/notification/notification.css';
+  composes: hds-notification--box-shadow from '@jorilindell/hds-core/lib/components/notification/notification.css';
 }

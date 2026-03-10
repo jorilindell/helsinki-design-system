@@ -21,7 +21,7 @@ type Options = {
   submitEvent?: boolean;
 };
 
-jest.mock('hds-core/lib/components/cookie-consent/cookieConsent', () => ({
+jest.mock('@jorilindell/hds-core/lib/components/cookie-consent/cookieConsent', () => ({
   default: '/* We are not using styles inside jest yet */',
 }));
 
