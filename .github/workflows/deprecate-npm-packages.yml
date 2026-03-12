@@ -1,0 +1,46 @@
+name: deprecate npm packages
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch: # Allow manual triggering for testing
+
+jobs:
+  deprecate-npm-packages:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Read .nvmrc
+        run: echo "NODE_VERSION=$(cat .nvmrc)" >> $GITHUB_OUTPUT
+        id: nvmrc
+
+      - name: setup node ${{ steps.nvmrc.outputs.NODE_VERSION }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: '${{ steps.nvmrc.outputs.NODE_VERSION }}'
+          registry-url: 'https://registry.npmjs.org'
+          always-auth: true
+
+      - name: deprecate unsupported versions
+        run: |
+          for pkg in packages/*; do
+            if [ -f "$pkg/package.json" ]; then
+              NAME=$(node -p "require('./$pkg/package.json').name")
+              MAJOR=$(node -p "require('./$pkg/package.json').version.split('.')[0]")
+
+              if [ "$MAJOR" -gt 1 ]; then
+                PREV_MAJOR=$((MAJOR-1))
+                echo "Deprecating $NAME versions < $PREV_MAJOR.0.0"
+                npm deprecate "$NAME@<$PREV_MAJOR.0.0" \
+                  "Versions prior to v$PREV_MAJOR are deprecated, please update."
+              else
+                echo "Skipping deprecation for $NAME (version $MAJOR.x.x - no previous major versions to deprecate)"
+              fi
+            fi
+          done
