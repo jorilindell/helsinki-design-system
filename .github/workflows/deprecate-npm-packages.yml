@@ -28,6 +28,8 @@ jobs:
           always-auth: true
 
       - name: deprecate unsupported versions
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
           for pkg in packages/*; do
             if [ -f "$pkg/package.json" ]; then
